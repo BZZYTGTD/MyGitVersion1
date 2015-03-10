@@ -1,0 +1,19 @@
+1.当开始从蓝牙接收数据之后，不想接收则暂停，接着点击读取记录，则LogCat中显示读取了数据，但是页面上并没有显示读取到的波形。
+2.从蓝牙接收一定数据之后，程序会死掉，报出如下错误
+11-24 23:06:44.169: A/libc(9246): Fatal signal 11 (SIGSEGV) at 0x000004c7 (code=1), thread 9246 (uetoothlegatt52)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at android.os.BinderProxy.transact(Native Method)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at android.bluetooth.IBluetoothGattCallback$Stub$Proxy.onNotify(IBluetoothGattCallback.java:817)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at com.android.bluetooth.gatt.GattService.onNotify(GattService.java:706)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at dalvik.system.NativeStart.run(Native Method)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): An exception was thrown by callback 'btgattc_notify_cb'.
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): android.os.DeadObjectException
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at android.os.BinderProxy.transact(Native Method)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at android.bluetooth.IBluetoothGattCallback$Stub$Proxy.onNotify(IBluetoothGattCallback.java:817)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at com.android.bluetooth.gatt.GattService.onNotify(GattService.java:706)
+11-24 23:12:03.559: E/BluetoothServiceJni(3460): 	at dalvik.system.NativeStart.run(Native Method)
+3.每次 修改filter.cpp文件都会出现11个错误：如下（但是删除错误之后并不影响运行，就是每次修改都要先删除错误）
+Function 'cos' could not be resolved	filter.cpp	/BluetoothLeGatt52/jni	line 31	Semantic Error
+Function 'ceil' could not be resolved	filter.cpp	/BluetoothLeGatt52/jni	line 109	Semantic Error
+Function 'floor' could not be resolved	filter.cpp	/BluetoothLeGatt52/jni	line 160	Semantic Error
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/heartLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/space"
+            android:text="心率："
+            android:textColor="#FFD700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/heartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/heartLable"
+            android:text=" "
+            android:textColor="#00FF00"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/breathLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/heartRate"
+            android:text="呼吸率："
+            android:textColor="#FFD700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/breathRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/breathLable"
+            android:text="50"
+            android:textColor="#FFD700"
+            android:textSize="80sp" />
+         <Switch
+	        android:id="@+id/switch1"
+	        android:focusable="false"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Senser" 
+	        android:layout_toRightOf="@id/breathRate"/>
+<!-- 
+          <SeekBar 
+	        android:id="@+id/seekBar"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:max="10"
+	          style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_weight="1"
+	        android:layout_toRightOf="@id/breathRate"/>
+	         -->
+	  <!--     
+        <TextView
+            android:id="@+id/debug_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/seekBarRecord"
+            android:layout_weight="1" />
+             --> 
+    </RelativeLayout>
+
+   
+
+</LinearLayout>

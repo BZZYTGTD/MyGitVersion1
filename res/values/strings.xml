@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+ 
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+ 
+          http://www.apache.org/licenses/LICENSE-2.0
+ 
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="heartRate">心率：</string>
+    <string name="breathRate">呼吸率：</string>
+    <string name="defaultHeartRate">未知</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    
+    <string name="ECG_DATA">ECG_DATA</string>
+ 
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+ 
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="wifi">wifi</string>
+    
+    <string name="menu1_connect_item">连接和断开</string>
+    <string name="menu1_connecting">正在连接...</string>
+    <string name="menu1_disconnecting">正在断开...</string>
+    <string name="menu1_connected">已连接</string>
+    <string name="menu1_disconnected">已断开</string>
+    <string name="menu1_state_item">开始和暂停</string>
+    <string name="menu1_start">已开始</string>
+    <string name="menu1_stop">已停止</string>
+    <string name="menu1_read_record">读取记录</string>
+    <string name="menu1_record_stop">停止读取</string>
+    <string name="menu1_record_null">    </string>
+    <string name="menu1_change_filter">改变滤波器</string>
+    <string name="menu1_filter_A">滤波器A</string>
+    <string name="menu1_filter_B">滤波器B</string>
+    <string name="menu1_help">帮助</string>   
+    <string name="menu1_null">    </string>
+    
+
+</resources>

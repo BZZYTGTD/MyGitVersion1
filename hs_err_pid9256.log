@@ -1,0 +1,83 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=9256, tid=8464
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x003b9400):  JavaThread "Unknown thread" [_thread_in_vm, id=8464, stack(0x00340000,0x00390000)]
+
+Stack: [0x00340000,0x00390000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x003b9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8464, stack(0x00340000,0x00390000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\javaanzhuang\bin\javaw.exe
+0x77ca0000 - 0x77ddc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76770000 - 0x76844000 	C:\Windows\system32\kernel32.dll
+0x75f30000 - 0x75f7b000 	C:\Windows\system32\KERNELBASE.dll
+0x777a0000 - 0x77840000 	C:\Windows\system32\ADVAPI32.dll
+0x77e20000 - 0x77ecc000 	C:\Windows\system32\msvcrt.dll
+0x77540000 - 0x77559000 	C:\Windows\SYSTEM32\sechost.dll
+0x77b60000 - 0x77c01000 	C:\Windows\system32\RPCRT4.dll
+0x77650000 - 0x77719000 	C:\Windows\system32\USER32.dll
+0x77750000 - 0x7779e000 	C:\Windows\system32\GDI32.dll
+0x77e10000 - 0x77e1a000 	C:\Windows\system32\LPK.dll
+0x76850000 - 0x768ed000 	C:\Windows\system32\USP10.dll
+0x77de0000 - 0x77dff000 	C:\Windows\system32\IMM32.DLL
+0x76690000 - 0x7675c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\javaanzhuang\bin\msvcr71.dll
+0x6d800000 - 0x6da56000 	D:\javaanzhuang\bin\client\jvm.dll
+0x745d0000 - 0x74602000 	C:\Windows\system32\WINMM.dll
+0x75d30000 - 0x75d7b000 	C:\Windows\system32\apphelp.dll
+0x6d280000 - 0x6d288000 	D:\javaanzhuang\bin\hpi.dll
+0x77e00000 - 0x77e05000 	C:\Windows\system32\PSAPI.DLL
+0x6d7b0000 - 0x6d7bc000 	D:\javaanzhuang\bin\verify.dll
+0x6d320000 - 0x6d33f000 	D:\javaanzhuang\bin\java.dll
+0x6d7f0000 - 0x6d7ff000 	D:\javaanzhuang\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Android SDK\SDk anzhuang\platforms\android-18\android.jar 
+java_command: com.tju.bluetoothlegatt52.WifiService_Server
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;D:\java\javaa\test.jar
+PATH=D:/javaanzhuang/bin/client;D:/javaanzhuang/bin;D:/javaanzhuang/lib/i386;D:\NDK\android-ndk-r9d-windows-x86\android-ndk-r9d;D:\javaanzhuang\bin;C:\Program Files\AMD APP\bin\x86;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;F:\runtime\win32;F:\bin;F:\matlab\runtime\win32;F:\matlab\bin;F:\A\System;d:\ruanjianmat\quartus90\quartus\bin;D:\ruanjianmat\matlab\Malab2\runtime\win32;D:\ruanjianmat\matlab\Malab2\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;D:\Android SDK\SDk anzhuang\platform-tools;D:\Android SDK\SDk anzhuang\tools;C:\Program Files\VisualSVN Server\bin;D:\Swing\swigwin-3.0.2\swigwin-3.0.2;C:\CygwinPortable\App\Cygwin\bin;D:\eclipseanzhuang\eclipse-standard-kepler-SR2-win32\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 2097151k(903024k free), swap 4194303k(2266200k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-rc2-b32), built on Sep 12 2008 00:52:11 by "java_re" with MS VC++ 7.1
+
+time: Tue Feb 03 17:20:42 2015
+elapsed time: 0 seconds
+
